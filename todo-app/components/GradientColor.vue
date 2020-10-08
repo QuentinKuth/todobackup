@@ -20,7 +20,7 @@ export default {
     gradientColor () {
       const colorBottom = `color-stop(30%,  ${this.colors ? this.colors[0] : "#E0D7D3"})`
       const colorTop = `to(${this.colors ? this.colors[1]  : '#8A7D80'})`
-      return `-webkit-gradient(linear, left bottom, left top, color-stop(0.3, rgb(2, 98, 98)), to(rgb(133, 169, 71))`
+      return `-webkit-gradient(linear, left bottom, left top, color-stop(0.3, rgb(2, 98, 98)), to(rgb(22, 110, 90))`
     }
   }
 }
