@@ -1,6 +1,6 @@
 <template>
   <div class="avatar" :class="{ avatar__selected: !!selected }">
-    <div class="quick_add"  @click="toggleAdding"> Quick Add</div>
+    <div class="quick_add"  @click="toggleAdding"> To-Do schnell hinzufügen</div>
     <p class="avatar_date">TODAY : {{ today | dateString }}</p>
   </div>
 </template>

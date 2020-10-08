@@ -20,7 +20,7 @@
         <h4 class="todo_subtitle" v-if="todayTasks.length">Today</h4>
         <ul class="columns">
           <draggable v-model="todo.tasks">
-          <li v-for="task in todayTasks" :key="task.id" class="column"> 
+          <li v-for="task in todayTasks" :key="task.id" class="column">
             <task :todo="todo" :task="task" />
           </li>
         </draggable>
@@ -70,7 +70,7 @@ export default {
   },
   computed: {
     color () {
-      return (this.todo && this.todo.colors) ? this.todo.colors[0] : '#ff6262';
+      return (this.todo && this.todo.colors) ? this.todo.colors[0] : '#E0D7D3';
     },
     progress () {
       const totalCount = this.todo.tasks.filter(t => !t.deleted).length
@@ -78,7 +78,7 @@ export default {
       return totalCount > 0 ? `${Math.round((doneCount / totalCount) * 100)}%` : 0;
     },
     progressColor () {
-      const colorLeft = `color-stop(30%, ${(this.todo && this.todo.colors) ? this.todo.colors[0] : '#ff6262'})`
+      const colorLeft = `color-stop(30%, ${(this.todo && this.todo.colors) ? this.todo.colors[0] : '#E0D7D3'})`
       const colorRight = `to(${(this.todo && this.todo.colors) ? this.todo.colors[1] : '#ffa947'})`
       return `-webkit-gradient(linear, left bottom, right bottom, ${colorLeft}, ${colorRight})`
     },
@@ -263,7 +263,7 @@ function handleDrop(e) {
     this.insertAdjacentHTML('beforebegin',dropHTML);
     var dropElem = this.previousSibling;
     addDnDHandlers(dropElem);
-    
+
   }
   this.classList.remove('over');
   return false;

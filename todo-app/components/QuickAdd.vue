@@ -24,7 +24,7 @@ export default {
     ...mapState(['selected', 'adding']),
     ...mapGetters(['currentTodo']),
     gradientColor () {
-      const colorLeft = `color-stop(30%, ${this.currentTodo ? this.currentTodo.colors[0] : "#ff6262"})`
+      const colorLeft = `color-stop(30%, ${this.currentTodo ? this.currentTodo.colors[0] : "#E0D7D3"})`
       const colorRight = `to(${this.currentTodo ? this.currentTodo.colors[1]  : '#ffa947'})`
       return `-webkit-gradient(linear, left bottom, right top, ${colorLeft}, ${colorRight})`
     }
@@ -32,7 +32,7 @@ export default {
   methods: {
     ...mapMutations(['toggleAdding','togglequickAdding']),
     togglequickAdding1(e){
-        
+
     }
   }
 }
