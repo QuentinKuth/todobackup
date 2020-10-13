@@ -9,7 +9,7 @@ top: 20px;
 cursor: pointer;
 }
 .bm-burger-bars {
-background-color: #373a47;
+background-color: #ffffff;
 }
 .line-style {
 position: absolute;
