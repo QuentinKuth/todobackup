@@ -3,12 +3,13 @@
     <div class="todo-editing" v-if="!!adding">
       <app-bar title="New Tasks" left="close" @left="togglequickAdding" />
       <div class="todo-editing_head">
-        <p>What tasks are you planning to perform?</p>
+        <p>Welche Aufgabe möchtest du erstellen?</p>
       </div>
       <div class="todo-editing_body">
         <textarea rows="3" v-model="adding.text"></textarea>
       </div>
       <button class="floating-button floating-button__editing" @click="togglequickAdding" :style="{ background: gradientColor }"></button>
+     <!-- <router-link to="/abbrechen" tag="button">Abbrechen</router-link> -->
     </div>
     </transition>
 </template>
@@ -16,6 +17,7 @@
 <script>
 import { mapState, mapGetters, mapMutations } from 'vuex'
 import AppBar from './AppBar.vue'
+
 export default {
   components: {
     AppBar
@@ -24,15 +26,14 @@ export default {
     ...mapState(['selected', 'adding']),
     ...mapGetters(['currentTodo']),
     gradientColor () {
-      const colorLeft = `color-stop(30%, ${this.currentTodo ? this.currentTodo.colors[0] : "#E0D7D3"})`
-      const colorRight = `to(${this.currentTodo ? this.currentTodo.colors[1]  : '#ffa947'})`
+      const colorLeft = `color-stop(30%, ${this.currentTodo ? this.currentTodo.colors[0] : "#40E0D0"})`
+      const colorRight = `to(${this.currentTodo ? this.currentTodo.colors[1]  : '#40E0D0'})`
       return `-webkit-gradient(linear, left bottom, right top, ${colorLeft}, ${colorRight})`
     }
   },
   methods: {
     ...mapMutations(['toggleAdding','togglequickAdding']),
     togglequickAdding1(e){
-
     }
   }
 }
@@ -93,4 +94,5 @@ export default {
 .edit-leave-active {
   transition: all 0.5s ease;
 }
+
 </style>

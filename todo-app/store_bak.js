@@ -10,11 +10,11 @@ export default new Vuex.Store({
     todos: [
       {
         icon: 'user',
-        name: 'Personal',
+        name: 'Allgemein',
         tasks: [
           {
             id: 1,
-            title: 'Dating',
+            title: 'Formular ausfüllen',
             date: new Date(),
             done: false,
             deleted: false

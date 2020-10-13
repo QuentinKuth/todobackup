@@ -70,7 +70,7 @@ export default {
   }
   .todo {
     border-radius: 8px;
-    background-color: white;
+    background-color: whitesmoke;
   }
 }
 .todo-list__selected {

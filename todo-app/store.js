@@ -10,66 +10,66 @@ export default new Vuex.Store({
      todos: [
       {
         icon: 'user',
-        name: 'Personal',
+        name: 'Allgemein',
         tasks: [
           {
             id: 1,
-            title: 'Dating',
+            title: 'Test',
             date: new Date(),
             done: false,
             deleted: false
           }
         ],
-        colors: ['#ff6262', '#ffa947']
+        colors: ['#40E0D0', '#FFFFFF']
       },
       {
         icon: 'suitcase',
-        name: 'Work',
+        name: 'Arbeit',
         tasks: [
           {
             id: 3,
-            title: 'Design Sprint',
+            title: 'Sprint',
             date: new Date(),
             done: true,
             deleted: false
           },
           {
             id: 4,
-            title: 'Icon Set Design for Mobile App',
+            title: 'Vercel',
             date: new Date(),
             done: false,
             deleted: false
           },
           {
             id: 5,
-            title: 'HTML/CSS Study',
+            title: 'HTML/CSS',
             date: new Date(),
             done: false,
             deleted: false
           },
           {
             id: 6,
-            title: 'Weekly Report',
+            title: 'Report',
             date: new Date(),
             done: false,
             deleted: false
           },
           {
             id: 7,
-            title: 'Design Meeting',
+            title: 'Meeting',
             date: new Date(),
             done: false,
             deleted: false
           },
           {
-            title: 'Quick Prototyping',
+            title: 'Paper Prototyping',
             date: new Date('2019-09-29'),
             done: false,
             deleted: false
           },
           {
             id: 8,
-            title: 'UX Conference',
+            title: 'UX Konferenz',
             date: new Date('2019-09-16'),
             done: false,
             deleted: false
@@ -79,11 +79,11 @@ export default new Vuex.Store({
       },
       {
         icon: 'home',
-        name: 'Home',
+        name: 'Zuhause',
         tasks: [
           {
             id: 2,
-            title: 'House Keeping',
+            title: 'Haushalt',
             date: new Date(),
             done: true,
             deleted: false
@@ -96,7 +96,7 @@ export default new Vuex.Store({
     selected: null,
     unselect: null,
     editing: null,
-    colors: [{colors:['#ff6262', '#ffa947']}],
+    colors: [{colors:[ '#40E0D0', '#00CED1']}],
     adding: null
   },
   getters: {
@@ -189,6 +189,6 @@ export default new Vuex.Store({
     },
   },
   actions: {
-    
+
   }
 })

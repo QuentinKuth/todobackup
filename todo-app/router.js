@@ -4,6 +4,7 @@ import Home from './views/Home.vue'
 import Kalender from "./components/Kalender";
 import Todotinder from "./components/Todotinder";
 import Einstellungen from "./components/Einstellungen";
+import Abbrechen from "./components/Abbrechen";
 
 Vue.use(Router)
 
@@ -14,8 +15,20 @@ export default new Router({
     {
       path: '/',
       name: 'home',
-      component: Home
+      component: Home,
+      meta: {
+        reload: true,
+      }
     },
+    {
+      path: '',
+      name: 'home',
+      component: Home,
+      meta: {
+        reload: true,
+      }
+    },
+
     {
       path: '/kalender',
       name: 'kalender',
@@ -30,6 +43,11 @@ export default new Router({
       path: '/einstellungen',
       name: 'home',
       component: Einstellungen
+    },
+    {
+      path: '/abbrechen',
+      name: 'abbrechen',
+      component: Abbrechen
     }
 
   ]

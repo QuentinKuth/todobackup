@@ -15,7 +15,12 @@ export default {
   },
   computed: {
     ...mapState(['selected']),
-    ...mapGetters(['todayTasks'])
+    ...mapGetters(['todayTasks']),
+    gradientColor () {
+      const colorLeft = `color-stop(30%, ${this.currentTodo.colors[0]})`
+      const colorRight = `to(${this.currentTodo.colors[1]})`
+      return `-webkit-gradient(linear, left bottom, right top, ${colorLeft}, ${colorRight})`
+    }
   },
    methods: {
     ...mapMutations(['toggleAdding'])
@@ -35,14 +40,14 @@ export default {
 .avatar {
   display: flex;
   padding: 0 40px;
-  height: 300px;
+  height: 170px;
   justify-content: flex-end;
   flex-direction: column;
   transition: all 0.5s ease;
 }
 .quick_add{
-  background:white;
-  height:60%;
+  background: white;
+  height:30%;
   width:100%;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
     color: #666;
