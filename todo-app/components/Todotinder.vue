@@ -16,6 +16,10 @@
         <span>{{ card }}</span>
       </div>
     </vue-swing>
+
+    <img src="../assets/heart.png" class="heart"/>
+    <img src="../assets/x.png" class="x"/>
+
   </div>
 </template>
 
@@ -64,6 +68,20 @@ export default {
 </script>
 
 <style>
+
+.x {
+  position: absolute;
+  bottom: 120px;
+  left: 45px;
+  width: 20%;
+}
+
+.heart {
+  width: 12%;
+  position: absolute;
+  bottom: 140px;
+  right: 60px;
+}
 
 body {
   background-color: #444;
