@@ -1,4 +1,5 @@
 <template>
+  <!--Quelle fuer die Projektstruktur und Aufbau der Applikation https://github.com/lizzz0523/limni/tree/master/todo-app -->
   <div
     class="gradient_color"
     :class="{ gradient_color__active: active }"

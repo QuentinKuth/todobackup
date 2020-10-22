@@ -1,4 +1,5 @@
 <template>
+  <!--Quelle fuer die Projektstruktur und Aufbau der Applikation https://github.com/lizzz0523/limni/tree/master/todo-app -->
   <div class="todo-list" :class="{ 'todo-list__selected': !!selected }">
     <ul :style="{ width: `${todos.length * 100}%` }">
       <li

@@ -1,5 +1,5 @@
 <template>
-  <!-- https://github.com/lizzz0523/limni/tree/master/todo-app -->
+  <!--Quelle fuer die Projektstruktur und Aufbau der Applikation https://github.com/lizzz0523/limni/tree/master/todo-app -->
   <div class="home">
     <Slide>
         <router-link to="Kalender"><h1>Kalender</h1></router-link>

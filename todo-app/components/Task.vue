@@ -1,8 +1,9 @@
 <template>
+  <!--Quelle fuer die Projektstruktur und Aufbau der Applikation https://github.com/lizzz0523/limni/tree/master/todo-app -->
   <transition name="fade">
     <div class="task" v-if="!task.deleted">
       <input :id="id" type="checkbox" class="input_check" v-model="task.done" v-if="enable_edit == false"/>
-      <label :for="id" v-if="enable_edit == false">{{ task.title }}</label> 
+      <label :for="id" v-if="enable_edit == false">{{ task.title }}</label>
       <input type="text" v-if="enable_edit == true" v-model="task.title" class="edit_taskss"/>
       <span class="" @click="editTask({ task })" v-if="enable_edit == false"><i class="fa fa-pencil"></i></span>
       <span class="" @click="savetask()" v-if="enable_edit == true"><i class="fa fa-save"></i></span>

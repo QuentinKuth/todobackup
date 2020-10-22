@@ -1,4 +1,6 @@
 <template>
+  <!--Quelle fuer die Projektstruktur und Aufbau der Applikation https://github.com/lizzz0523/limni/tree/master/todo-app -->
+
   <transition name="edit">
     <div class="todo-editing" v-if="!!editing">
       <app-bar title="New Tasks" left="close" @left="toggleEditing" />

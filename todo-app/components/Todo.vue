@@ -1,4 +1,6 @@
 <template>
+  <!--Quelle fuer die Projektstruktur und Aufbau der Applikation https://github.com/lizzz0523/limni/tree/master/todo-app -->
+
   <div class="todo" :class="{ todo__selected: selected }">
     <div class="todo_head" @click="handleClick">
       <div class="todo_icon" :style="{ color }">

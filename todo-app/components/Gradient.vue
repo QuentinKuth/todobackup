@@ -1,4 +1,5 @@
 <template>
+  <!--Quelle fuer die Projektstruktur und Aufbau der Applikation https://github.com/lizzz0523/limni/tree/master/todo-app -->
   <div class="gradient">
     <gradient-color
       v-for="(todo, index) in colors"
@@ -14,7 +15,7 @@ import { mapState } from 'vuex'
 import GradientColor from './GradientColor'
 export default {
   components: {
-    GradientColor 
+    GradientColor
   },
   computed: {
     ...mapState(['colors', 'currentIndex'])
